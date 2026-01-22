@@ -5,7 +5,7 @@ const Contact=()=>{
         <div id="contactMe" class="contact-container relative left-[30px]  py-10 h-[85vh]">
             <h1 className="text-6xl font-bold text-center   font-serif shadow-2xl">Let's Connect</h1>
             <div className="service-contaner flex justify-between mt-4 px-6">
-                <div className="shadow-2xl rounded-2xl service 1 space-y-4 bg-[#092609a7] relative left-[300px] w-[50vh] h-[50vh] px-2">
+                <div className="shadow-2xl rounded-2xl service 1 space-y-4 bg-[#092609a7] relative left-[300px] w-[50vh] h-[60vh] px-2">
                      <p className="text-2xl font-serif mt-12 px-8">I’m open to internship and entry-level backend development opportunities and Collaborations.</p>
     
                     <div className="icons-container mt-20 right-96 space-x-10">

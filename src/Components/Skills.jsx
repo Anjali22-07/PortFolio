@@ -2,7 +2,7 @@ import educationImage from "../assets/Education.png";
 const Skills=()=>{
     return (
         <>
-        <div id="skills" className="main-container bg-[#fac65cf9] h-[110vh]">
+        <div id="skills" className="main-container bg-[#f1ddb7f9] h-[110vh]">
            
                <div className="-mt-1">
                  <h1 className="relative text-[100px] left-[150px] mt-1 font-serif font-bold text-green-950">
