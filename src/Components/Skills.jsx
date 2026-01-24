@@ -36,12 +36,12 @@ const Skills=()=>{
                      <h1 className="font-bold text-2xl font-serif text-[#ecc672f9]">DataBases</h1>
                     <button className="px-1 py-1 text-[#ecc672f9] rounded-xl mr-6 shadow-xl hover:text-[#e49903]  text-center font-semibold">MySQL</button>
                      <h1 className="font-bold text-2xl font-serif text-[#ecc672f9]">Frontend(Basics)</h1>
-                      <div className="flex gap-3 ml-28">
+                      <div className="flex gap-3 ml-44">
                      <button className="px-1 py-1 text-[#ecc672f9] rounded-xl shadow-xl hover:text-[#e49903] font-semibold">HTML</button>
                     <button className="px-1 py-1 text-[#ecc672f9] rounded-xl shadow-xl  hover:text-[#e49903] font-semibold">CSS</button>
                     <button className="px-1 py-1 text-[#ecc672f9] rounded-xl shadow-xl  hover:text-[#e49903] font-semibold">JavaScript</button>
                     <button className="px-1 py-1 text-[#ecc672f9] rounded-xl  shadow-xl hover:text-[#e49903] font-semibold">React</button>
-                   <button className="px-1 py-1 text-[#ecc672f9] rounded-xl shadow-xl  hover:text-[#e49903] font-semibold">Hibernate</button>
+
              </div>
                <h1 className="font-bold text-2xl font-serif text-[#ecc672f9]">API & Tools </h1>
                       <div className="flex gap-3 ml-20">
