@@ -4,37 +4,43 @@ const Banner=()=>{
         <>
          
          <div className="banner-container relative flex h-screen">
-         
-         <div className="relative z-20">
-            <h1 className="relative text-[100px] left-52 font-serif font-bold text-[#f5d38e] shadow-2xl">
-               DEVELOPER
-                <span className="absolute text-[95px] top-32 left-[420px] text-transparent 
-                    [-webkit-text-stroke:1px_#E0B84C] opacity-0 fade-up [animation-delay:0.3s]">
-                    Java
-                </span>
-                <span className="absolute text-[95px] top-56 left-28 text-transparent 
-                    [-webkit-text-stroke:1px_#E0B84C] opacity-0 fade-up [animation-delay:0.6s]">
-                    SpringBoot
-                </span>
-                <span className="absolute text-[95px] top-80 h-32 left-[420px] text-transparent 
-                    [-webkit-text-stroke:1px_#E0B84C] opacity-0 fade-up [animation-delay:0.9s]">
-                    DSA
-                </span>
-            </h1>
+         <div className="text-yellow-700 px-14 w-screen mt-24 mx-28">
+            <h1 className="text-4xl relative right-12 font-serif font-bold mt-2 items-start">Anjali Singh</h1>
+            <h3 className="text-2xl relative right-12 font-serif font-bold mt-2 items-start">Backend Developer</h3>
+            <h4 className="text-2xl relative right-12 font-serif font-bold mt-2 items-start">Java • Spring Boot • REST APIs • MySQL</h4>
+           <br/> <p className="text-2xl relative right-12 font-serif font-bold mt-2 items-start" >Building scalable backend applications and 
+            <br/>learning
+software engineering through real-world projects.</p>
          </div>
-          {/* BLACK BOX — BELOW DSA */}
-      <div className="absolute left-0 right-0 mx-0 top-[400px] h-[32vh] w-full bg-black">
          
+          {/* BLACK BOX — BELOW DSA */}
+      <div className="absolute left-0 right-0 mx-0 top-[400px] h-[44vh] w-full bg-black">
+          <div className="icons-container mt-16 right-28 space-x-10">
+    <a
+      href="https://github.com/Anjali22-07"  // replace with your GitHub URL
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-yellow-900 hover:text-[#e49903] transition-colors duration-300 shadow-2xl"
+    > <i class="fa-brands text-4xl fa-github"></i></a>
+    <a
+      href="https://www.linkedin.com/in/anjali-singh-061685287/"  // replace with your GitHub URL
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-yellow-900 hover:text-[#e49903] transition-colors duration-300 shadow-2xl"
+    ><i class="fa-brands text-4xl fa-linkedin"></i></a>
+     <a
+      href="https://mail.google.com/mail/?view=cm&to=anjalis2277@gmail.com"  // replace with your GitHub URL
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-yellow-900 hover:text-[#e49903] transition-colors duration-300 shadow-2xl"
+    ><i class="fa-solid text-4xl fa-envelope"></i></a>
+         </div>
         </div>  
-        <div className=" absolute top-20 border right-24 rounded-lg">
-            <img src={bannerImage}
-             className="w-[420px] h-[420px] object-cover"
-                alt="Anjali"/>
-          </div>
+       
           </div>
              
-
-        </>
+</>
+        
     );
 };
 

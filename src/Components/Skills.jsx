@@ -7,9 +7,7 @@ const Skills=()=>{
                <div className="-mt-1">
                  <h1 className="relative text-[100px] left-[150px] mt-1 font-serif font-bold text-green-950">
                Technical Skills</h1>
-                <h1 className="relative text-[100px] left-[150px] -mt-28 m-0 font-serif font-bold text-transparent 
-                    [-webkit-text-stroke:1px_#053827]">
-               Technical Skills</h1>            
+                           
             </div>
            
                 <div className="flex">

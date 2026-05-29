@@ -6,8 +6,7 @@ const Header=()=>{
         <div className="w-full main flex justify-between items-center px-12 mt-2">
          
           <div class="text-3xl font-serif font-bold">
-            {/* logo */}
-             Anjali
+            
           </div>
           <div class="space-x-8 text-xl font-bold">
             {/* menu links */}

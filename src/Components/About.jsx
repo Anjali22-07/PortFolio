@@ -1,8 +1,10 @@
 import aboutImage from "../assets/pic.png";
+import Header from "./Header.jsx"
 
 const About=()=>{
     return (
         <>
+        <Header/>
         <div id="about" className="main-container border py-1 bg-[#fac65cf9] h-[90vh] flex ">
          <div className="px-12 mt-6">
             {/* this is image section */}
