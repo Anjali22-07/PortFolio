@@ -33,4 +33,11 @@ html, body {
   animation: fadeUp 1.2s ease-out forwards;
 }
 
+@keyframes letterIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
