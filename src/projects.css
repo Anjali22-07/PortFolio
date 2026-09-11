@@ -1,0 +1,224 @@
+.projects-section {
+  background: #0d2915;
+  padding: 100px 40px;
+  overflow: hidden;
+}
+
+.projects-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.projects-heading {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.5rem, 7vw, 6rem);
+  font-weight: 700;
+  color: #e8bd5b;
+  margin: 0 0 55px;
+}
+
+/* ---------------- Carousel ---------------- */
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.carousel-window {
+  width: 100%;
+  overflow: hidden;
+}
+
+.projects-track {
+  display: flex;
+  gap: 16px;
+  transition: transform 0.55s ease;
+}
+
+/* ---------------- Card ---------------- */
+
+.project-card {
+  flex: 0 0 calc(33.333% - 11px);
+
+  min-height: 390px;
+  box-sizing: border-box;
+
+  background: #ae6b05;
+  border: 1px solid #e8bd5b;
+  border-radius: 22px;
+
+  padding: 30px 28px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.project-card h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  color: #f0d078;
+  margin: 0 0 28px;
+}
+
+.project-card > p {
+  color: #080808;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 450px;
+}
+
+/* ---------------- Tech Stack ---------------- */
+
+.project-tech {
+  margin-top: auto;
+  margin-bottom: 22px;
+}
+
+.project-tech span {
+  display: block;
+  font-weight: 700;
+  color: #080808;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.project-tech p {
+  color: #080808;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ---------------- Button ---------------- */
+
+.project-btn {
+  display: inline-block;
+
+  background: #073b1b;
+  color: #e8bd5b;
+
+  padding: 12px 22px;
+  border-radius: 6px;
+
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.project-btn:hover {
+  background: #062f16;
+  transform: translateY(-2px);
+}
+
+/* ---------------- Arrows ---------------- */
+
+.carousel-btn {
+  flex-shrink: 0;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  border: 1px solid #e8bd5b;
+
+  background: #ae6b05;
+  color: #f0d078;
+
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.carousel-btn:hover {
+  background: #c17b0a;
+  transform: scale(1.08);
+}
+
+/* ---------------- Dots ---------------- */
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #66806a;
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.dot.active {
+  width: 28px;
+  border-radius: 10px;
+  background: #e8bd5b;
+}
+
+/* ---------------- Tablet ---------------- */
+
+@media (max-width: 1000px) {
+  .project-card {
+    flex: 0 0 calc(50% - 8px);
+  }
+
+  .projects-track {
+    gap: 16px;
+  }
+}
+
+/* ---------------- Mobile ---------------- */
+
+@media (max-width: 650px) {
+  .projects-section {
+    padding: 70px 20px;
+  }
+
+  .projects-heading {
+    margin-bottom: 35px;
+  }
+
+  .carousel-wrapper {
+    gap: 8px;
+  }
+
+  .project-card {
+    flex: 0 0 100%;
+    min-height: 400px;
+    padding: 28px 22px;
+  }
+
+  .project-card h3 {
+    font-size: 1.8rem;
+  }
+
+  .project-card > p {
+    font-size: 1rem;
+  }
+
+  .carousel-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 1.2rem;
+  }
+}
