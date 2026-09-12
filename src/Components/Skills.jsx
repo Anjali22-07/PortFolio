@@ -1,66 +1,163 @@
+
 import educationImage from "../assets/Education.png";
-const Skills=()=>{
-    return (
-        <>
-        <div id="skills" className="main-container bg-[#f1ddb7f9] h-[110vh]">
-           
-               <div className="-mt-1">
-                 <h1 className="relative text-[100px] left-[150px] mt-1 font-serif font-bold text-green-950">
-               Technical Skills</h1>
-                           
+
+const Skills = () => {
+  return (
+    <section
+      id="skills"
+      className="main-container bg-[#f1ddb7f9] min-h-screen py-12 px-4 sm:px-6 lg:px-10"
+    >
+      {/* Heading */}
+      <div className="max-w-7xl mx-auto">
+        <h1
+          className="
+            text-5xl
+            sm:text-6xl
+            md:text-7xl
+            lg:text-8xl
+            xl:text-[100px]
+            font-serif
+            font-bold
+            text-green-950
+            text-center
+            lg:text-left
+            lg:ml-20
+          "
+        >
+          Technical Skills
+        </h1>
+      </div>
+
+      {/* Main Content */}
+      <div
+        className="
+          max-w-7xl
+          mx-auto
+          mt-10
+          lg:mt-20
+          flex
+          flex-col
+          lg:flex-row
+          items-center
+          lg:items-start
+          gap-10
+          lg:gap-16
+        "
+      >
+       
+        {/* Skills Card */}
+        <div className="w-full">
+          <div
+            className="
+              bg-[#041e04f6]
+              w-full
+              rounded-2xl
+              shadow-2xl
+              p-6
+              sm:p-8
+              md:p-10
+              space-y-7
+            "
+          >
+            {/* Languages */}
+            <div>
+              <h2 className="font-bold text-xl sm:text-2xl font-serif text-[#ecc672f9] mb-3">
+                Languages
+              </h2>
+
+              <div className="flex flex-wrap gap-3">
+                <SkillButton>Java</SkillButton>
+              </div>
             </div>
-           
-                <div className="flex">
-                     <div className="px-10 mt-28 border-green-950">
-                            {/* this is image section */}
-                             <img src={educationImage}
-                                         className="w-[400px] h-[480px] object-cover"
-                                            alt="Anjali"/>
-                        </div>
-             <div className="service-container mt-3 relative left-[100px] gap-6 felx items-center px-6 md-4">
-                <div className="shadow-2xl rounded-2xl service 1 space-y-2 bg-[#041e04f6] w-[100vh] h-[75vh]">
-                  <h1 className="font-bold text-2xl font-serif text-[#ecc672f9] ">Languages</h1>
-                    <button className="px-1 py-1 text-[#ecc672f9] rounded-xl mr-8 shadow-xl hover:text-[#e49903]  text-center  font-semibold">Java</button>
-                <h1 className="font-bold text-2xl font-serif text-[#ecc672f9]">Backend Development</h1>
-                   <div className="flex gap-3">
-                     <button className="px-3 py-1 text-[#ecc672f9] rounded-2xl hover:text-[#e49903] shadow-xl  font-semibold">Spring Boot</button>
-                    <button className="px-3 py-1 text-[#ecc672f9] rounded-2xl hover:text-[#e49903] shadow-xl font-semibold">Spring MVC</button>
-                    <button className="px-3 py-1 text-[#ecc672f9] rounded-2xl hover:text-[#e49903] shadow-xl  font-semibold">Spring Data JPA</button>
-                    <button className="px-3 py-1 text-[#ecc672f9] rounded-2xl hover:text-[#e49903]  shadow-xl font-semibold">Spring Security</button>
-                   <button className="px-3 py-1 text-[#ecc672f9] rounded-2xl hover:text-[#e49903] shadow-xl  font-semibold">Hibernate</button>
-                    <button className="px-3 py-1 text-[#ecc672f9] rounded-2xl  hover:text-[#e49903] shadow-xl font-semibold">RestAPIs</button>               
-                   </div>
-                   
-                     <h1 className="font-bold text-2xl font-serif text-[#ecc672f9]">DataBases</h1>
-                    <button className="px-1 py-1 text-[#ecc672f9] rounded-xl mr-6 shadow-xl hover:text-[#e49903]  text-center font-semibold">MySQL</button>
-                     <h1 className="font-bold text-2xl font-serif text-[#ecc672f9]">Frontend(Basics)</h1>
-                      <div className="flex gap-3 ml-44">
-                     <button className="px-1 py-1 text-[#ecc672f9] rounded-xl shadow-xl hover:text-[#e49903] font-semibold">HTML</button>
-                    <button className="px-1 py-1 text-[#ecc672f9] rounded-xl shadow-xl  hover:text-[#e49903] font-semibold">CSS</button>
-                    <button className="px-1 py-1 text-[#ecc672f9] rounded-xl shadow-xl  hover:text-[#e49903] font-semibold">JavaScript</button>
-                    <button className="px-1 py-1 text-[#ecc672f9] rounded-xl  shadow-xl hover:text-[#e49903] font-semibold">React</button>
 
-             </div>
-               <h1 className="font-bold text-2xl font-serif text-[#ecc672f9]">API & Tools </h1>
-                      <div className="flex gap-3 ml-20">
-                     <button classNamtext="px-1 py-1 text-[#ecc672f9] rounded-xl shadow-xl hover:text-[#e49903] font-semibold">RestAPI Integration</button>
-                    <button className="px-1 py-1 text-[#ecc672f9] rounded-xl shadow-xl  hover:text-[#e49903] font-semibold">PostMan</button>
-                    <button className="px-1 py-1 text-[#ecc672f9] rounded-xl shadow-xl  hover:text-[#e49903] font-semibold">JUnit</button>
-                    <button className="px-1 py-1 text-[#ecc672f9] rounded-xl  shadow-xl hover:text-[#e49903] font-semibold">Git & GitHub </button>
-                   <button className="px-1 py-1 text-[#ecc672f9] rounded-xl shadow-xl hover:text-[#e49903]  font-semibold">Maven</button>
-             </div>
+            {/* Backend */}
+            <div>
+              <h2 className="font-bold text-xl sm:text-2xl font-serif text-[#ecc672f9] mb-3">
+                Backend Development
+              </h2>
 
-                </div>
-                </div>
-                </div>
-            
-           
-           
-           
-        
+              <div className="flex flex-wrap gap-3">
+                <SkillButton>Spring Boot</SkillButton>
+                <SkillButton>Spring MVC</SkillButton>
+                <SkillButton>Spring Data JPA</SkillButton>
+                <SkillButton>Spring Security</SkillButton>
+                <SkillButton>Hibernate</SkillButton>
+                <SkillButton>REST APIs</SkillButton>
+              </div>
+            </div>
+
+            {/* Databases */}
+            <div>
+              <h2 className="font-bold text-xl sm:text-2xl font-serif text-[#ecc672f9] mb-3">
+                Databases
+              </h2>
+
+              <div className="flex flex-wrap gap-3">
+                <SkillButton>MySQL</SkillButton>
+              </div>
+            </div>
+
+            {/* Frontend */}
+            <div>
+              <h2 className="font-bold text-xl sm:text-2xl font-serif text-[#ecc672f9] mb-3">
+                Frontend (Basics)
+              </h2>
+
+              <div className="flex flex-wrap gap-3">
+                <SkillButton>HTML</SkillButton>
+                <SkillButton>CSS</SkillButton>
+                <SkillButton>JavaScript</SkillButton>
+                <SkillButton>React</SkillButton>
+              </div>
+            </div>
+
+            {/* API & Tools */}
+            <div>
+              <h2 className="font-bold text-xl sm:text-2xl font-serif text-[#ecc672f9] mb-3">
+                API & Tools
+              </h2>
+
+              <div className="flex flex-wrap gap-3">
+                <SkillButton>REST API Integration</SkillButton>
+                <SkillButton>Postman</SkillButton>
+                <SkillButton>JUnit</SkillButton>
+                <SkillButton>Git & GitHub</SkillButton>
+                <SkillButton>Maven</SkillButton>
+              </div>
+            </div>
+          </div>
         </div>
-        </>
-    );
+      </div>
+       {/* Image */}
+        <div className="flex-shrink-0 mt-32 ml-32">
+          <img
+            src={educationImage}
+            className="
+              w-80
+              h-80
+              sm:w-72
+              sm:h-96
+              md:w-80
+              md:h-[420px]
+              lg:w-[350px]
+              lg:h-[450px]
+              xl:w-[400px]
+              xl:h-[480px]
+              object-cover
+              rounded-2xl
+              shadow-xl
+            "
+            alt="Education"
+          />
+        </div>
+
+    </section>
+  );
 };
 
-export default Skills;
+/* Reusable Skill Button */
+const SkillButton = ({ children }) => {
+  return (
+    <button
+        className=" px-3 py-2 rounded-xl shadow-lg text-sm sm:text-base font-semibold text-[#ecc672f9] hover:text-[#e49903] hover:-translate-y-1 transition-all duration-200 border border-transparent hover:border-[#ecc672f9] " > {children} </button> ); }; 
+        export default Skills;

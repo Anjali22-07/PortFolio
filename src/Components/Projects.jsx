@@ -1,9 +1,7 @@
- import { useState } from "react";
+import { useState } from "react";
 import "../projects.css";
-  
- 
-const projects = [
 
+const projects = [
   {
     title: "AuthApp",
     description:
@@ -56,19 +54,24 @@ export default function Projects() {
   };
 
   const prevSlide = () => {
-    setCurrent((prev) => (prev - 1 + projects.length) % projects.length);
+    setCurrent(
+      (prev) => (prev - 1 + projects.length) % projects.length
+    );
   };
 
   return (
     <section className="projects-section" id="projects">
+
       <div className="projects-container">
 
-        <h2 className="projects-heading">Projects</h2>
+        <h2 className="projects-heading">
+          Projects
+        </h2>
 
         <div className="carousel-wrapper">
 
           <button
-            className="carousel-btn prev-btn"
+            className="carousel-btn"
             onClick={prevSlide}
             aria-label="Previous project"
           >
@@ -76,22 +79,36 @@ export default function Projects() {
           </button>
 
           <div className="carousel-window">
+
             <div
               className="projects-track"
               style={{
-                transform: `translateX(calc(-${current} * (33.333% + 16px)))`,
+                transform: `translateX(-${current * 100}%)`,
               }}
             >
+
               {projects.map((project, index) => (
-                <article className="project-card" key={index}>
+                <article
+                  className="project-card"
+                  key={index}
+                >
 
                   <h3>{project.title}</h3>
 
-                  <p>{project.description}</p>
+                  <p>
+                    {project.description}
+                  </p>
 
                   <div className="project-tech">
-                    <span>Tech Stack</span>
-                    <p>{project.tech}</p>
+
+                    <span>
+                      Tech Stack
+                    </span>
+
+                    <p>
+                      {project.tech}
+                    </p>
+
                   </div>
 
                   <a
@@ -105,11 +122,13 @@ export default function Projects() {
 
                 </article>
               ))}
+
             </div>
+
           </div>
 
           <button
-            className="carousel-btn next-btn"
+            className="carousel-btn"
             onClick={nextSlide}
             aria-label="Next project"
           >
@@ -119,19 +138,22 @@ export default function Projects() {
         </div>
 
         <div className="carousel-dots">
+
           {projects.map((_, index) => (
             <button
               key={index}
-              className={`dot ${current === index ? "active" : ""}`}
+              className={`dot ${
+                current === index ? "active" : ""
+              }`}
               onClick={() => setCurrent(index)}
               aria-label={`Go to project ${index + 1}`}
             />
           ))}
+
         </div>
 
       </div>
+
     </section>
   );
 }
-
-
